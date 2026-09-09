@@ -4,7 +4,17 @@
 
   <url>
        <loc>https://keen-palmier-83a729.netlify.app/</loc>
-       <lastmod>2026-09-03T19:02:22+00:00</lastmod>
+       <lastmod>2026-09-09T21:02:17+00:00</lastmod>
        <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://keen-palmier-83a729.netlify.app/algeria</loc>
+       <lastmod>2026-09-09T21:02:17+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://keen-palmier-83a729.netlify.app/places</loc>
+       <lastmod>2026-09-09T21:02:17+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
 </urlset>
