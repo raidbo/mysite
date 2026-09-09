@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: rtl;
+    font-family: "Tajawal", "Arial", sans-serif;
+    background: #f5f7f6;
+    color: #1f2933;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* =========================
+   Header
+========================= */
+
+.site-header {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.site-header h1 {
+    color: #006633;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.site-header p {
+    color: #667085;
+    font-size: 16px;
+}
+
+/* =========================
+   Wilayas
+========================= */
+
+.wilayas-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.wilaya-card {
+    background: #ffffff;
+    border: 1px solid #e1e7e3;
+    border-radius: 14px;
+    overflow: hidden;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.wilaya-card h2 {
+    width: 100%;
+    min-height: 68px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+    padding: 14px 18px;
+
+    cursor: pointer;
+    user-select: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    background: #ffffff;
+
+    transition: background 0.25s ease;
+}
+
+.wilaya-number {
+    width: 46px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #006633;
+    color: #ffffff;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    direction: ltr;
+
+    box-shadow: 0 3px 8px rgba(0, 102, 51, 0.18);
+}
+
+.wilaya-name {
+    flex: 1;
+
+    color: #1f2933;
+
+    line-height: 1.5;
+}
+
+/* =========================
+   Arrow
+========================= */
+
+.wilaya-card h2::after {
+    content: "⌄";
+
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f0f3f1;
+    color: #006633;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+/* =========================
+   Description
+========================= */
+
+.wilaya-description {
+    max-height: 0;
+
+    overflow: hidden;
+
+    padding: 0 22px;
+
+    color: #59636d;
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    opacity: 0;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.4s ease;
+}
+
+/* =========================
+   Active Card
+========================= */
+
+.wilaya-card.active {
+    border-color: #006633;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transform: translateY(-2px);
+}
+
+.wilaya-card.active h2 {
+    background: #f0f7f3;
+}
+
+.wilaya-card.active h2::after {
+    transform: rotate(180deg);
+
+    background: #006633;
+    color: #ffffff;
+}
+
+.wilaya-card.active .wilaya-description {
+    max-height: 500px;
+
+    padding: 0 22px 22px;
+
+    opacity: 1;
+}
+
+/* =========================
+   Hover
+========================= */
+
+.wilaya-card:hover {
+    border-color: #006633;
+}
+
+.wilaya-card h2:hover {
+    background: #fafcfb;
+}
+
+.wilaya-card h2:focus-visible {
+    outline: 3px solid rgba(0, 102, 51, 0.25);
+    outline-offset: -3px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 35px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e1e7e3;
+
+    text-align: center;
+
+    color: #7a858f;
+    font-size: 14px;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .wilayas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .site-header h1 {
+        font-size: 28px;
+    }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .site-header {
+        margin-bottom: 22px;
+    }
+
+    .site-header h1 {
+        font-size: 25px;
+    }
+
+    .site-header p {
+        font-size: 14px;
+    }
+
+    .wilayas-container {
+        gap: 12px;
+    }
+
+    .wilaya-card h2 {
+        min-height: 62px;
+
+        padding: 11px 13px;
+
+        gap: 11px;
+
+        font-size: 16px;
+    }
+
+    .wilaya-number {
+        width: 42px;
+        height: 37px;
+
+        font-size: 13px;
+    }
+
+    .wilaya-card h2::after {
+        width: 29px;
+        height: 29px;
+
+        font-size: 18px;
+    }
+
+    .wilaya-description {
+        padding-left: 16px;
+        padding-right: 16px;
+
+        font-size: 14px;
+    }
+
+    .wilaya-card.active .wilaya-description {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 18px;
+    }
+/* تنسيق الفوتر الرئيسي */
+.site-footer {
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e1e7e3;
+    color: #59636d;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* تنسيق النصوص داخل الفوتر */
+.site-footer p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.site-footer p:first-child {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* مستطيل الإعلان الصغير */
+.box-sponsor {
+    width: 180px !important;
+    height: 35px !important;
+    min-width: 180px !important;
+    min-height: 35px !important;
+    margin: 0 auto 15px auto !important; /* هامش أسفل المستطيل بفصله عن النصوص */
+    padding: 0 !important;
+    border: 1px dashed #0bd756 !important;
+    background-color: #07ec79 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #1c8550;
+    font-size: 11px;
+    box-sizing: border-box !important;
+    border-radius: 4px;
+    overflow: hidden;
+}
+  

@@ -1,0 +1,271 @@
+/* ===================================
+   تنسيق الفوتر
+   =================================== */
+
+.site-footer {
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e1e7e3;
+    color: #59636d;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.site-footer p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.site-footer p:first-child {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* ===================================
+   تنسيق مستطيل الإعلانات المتجاوب
+   =================================== */
+
+/* الحجم الافتراضي للكمبيوتر والشاشات الكبيرة (468x60) */
+.box-sponsor {
+    width: 468px !important;
+    height: 60px !important;
+    max-width: 100% !important;
+    margin: 25px auto !important;
+    padding: 0 !important;
+    border: 1px dashed #d5ddd8 !important;
+    background-color: #fafcfb !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #a0aaa5;
+    font-size: 12px;
+    box-sizing: border-box !important;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* التنسيق الخاص بمستطيل الإعلان داخل الفوتر */
+.site-footer .box-sponsor {
+    margin: 0 auto 20px auto !important;
+}
+
+/* التحكم بمرونة العناصر والإعلانات الخارجية داخل المستطيل */
+.box-sponsor iframe,
+.box-sponsor ins,
+.box-sponsor img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+/* ===================================
+   التجاوب مع شاشات الهواتف (أقل من 600px)
+   =================================== */
+
+@media screen and (max-width: 600px) {
+    /* تحويل المقاس تلقائياً لشاشات الهواتف (320x50) */
+    .box-sponsor {
+        width: 320px !important;
+        height: 50px !important;
+        font-size: 11px;
+    }
+}
+
+/* حاوية نموذج التبليغ */
+.report-box {
+    max-width: 380px;
+    margin: 20px auto 0 auto;
+    padding: 15px;
+    background-color: #fcf8f6;
+    border: 1px solid #f5e6e1;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.report-box h4 {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: #c0392b;
+}
+
+/* صندوق النص */
+.report-form textarea {
+    width: 100%;
+    height: 65px;
+    padding: 8px;
+    border: 1px solid #dcdde1;
+    border-radius: 4px;
+    font-size: 12px;
+    resize: none;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.report-form textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+/* زر الإرسال */
+.report-form button {
+    margin-top: 8px;
+    padding: 6px 18px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.report-form button:hover {
+    background-color: #c0392b;
+}
+
+.ai-notice {
+    width: 100%;
+    max-width: 1100px;
+    margin: 15px auto;
+    padding: 14px 18px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    background: #fff8e1;
+    border: 1px solid #f0d98a;
+    border-right: 4px solid #e0a800;
+    border-radius: 8px;
+
+    color: #5f4b16;
+    font-size: 14px;
+    line-height: 1.7;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ai-notice-icon {
+    font-size: 21px;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.ai-notice-content {
+    flex: 1;
+}
+
+.ai-notice-content strong {
+    display: block;
+    margin-bottom: 3px;
+    color: #7a5c00;
+    font-size: 15px;
+}
+
+.ai-notice-content p {
+    margin: 0;
+}
+
+.ai-notice-content a {
+    color: #0066cc;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dashed #0066cc;
+    transition: all 0.2s ease;
+}
+
+.ai-notice-content a:hover {
+    color: #004a99;
+    border-bottom-style: solid;
+}
+
+.extra-info {
+width: 100%;
+margin: 40px 0 0;
+box-sizing: border-box;
+}
+
+.extra-info-title {
+text-align: center;
+font-size: 24px;
+margin: 0 0 20px;
+}
+
+.info-boxes {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.info-box {
+width: 100%;
+box-sizing: border-box;
+background: #ffffff;
+border: 1px solid #ddd;
+border-radius: 14px;
+overflow: hidden;
+}
+
+/* زر فتح المستطيل */
+.info-box summary {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 18px 20px;
+box-sizing: border-box;
+cursor: pointer;
+list-style: none;
+font-size: 19px;
+font-weight: bold;
+text-align: right;
+}
+
+.info-box summary::-webkit-details-marker {
+display: none;
+}
+
+/* السهم */
+.info-arrow {
+font-size: 14px;
+transition: transform 0.3s ease;
+}
+
+/* تدوير السهم عند الفتح */
+.info-box[open] .info-arrow {
+transform: rotate(180deg);
+}
+
+/* المحتوى الذي يظهر بعد الضغط */
+.info-box .info-content {
+display: block;
+max-height: none;
+opacity: 1;
+overflow: visible;
+padding: 0 20px 20px;
+box-sizing: border-box;
+}
+
+.info-box .info-content p {
+display: block;
+margin: 0 0 15px;
+line-height: 1.8;
+font-size: 15px;
+}
+
+/* رابط للمزيد */
+.info-box .info-content a {
+display: inline-block;
+color: #0066cc;
+font-weight: bold;
+text-decoration: none;
+cursor: pointer;
+}
+
+.info-box .info-content a:hover {
+text-decoration: underline;
+}

@@ -1,0 +1,509 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, Tahoma, sans-serif;
+background: #f5f7fa;
+color: #222;
+line-height: 1.8;
+}
+
+header {
+width: 100%;
+background: #ffffff;
+padding: 30px 20px;
+text-align: center;
+border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+margin: 0;
+font-size: 32px;
+font-weight: 700;
+color: #1f2937;
+}
+
+main {
+width: 100%;
+max-width: 1100px;
+margin: 0 auto;
+padding: 25px 20px;
+}
+
+.ai-notice {
+display: flex;
+align-items: flex-start;
+gap: 15px;
+width: 100%;
+background: #fff8e1;
+border: 1px solid #f0d98c;
+border-right: 5px solid #e0a800;
+border-radius: 10px;
+padding: 18px 20px;
+margin-bottom: 25px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ai-notice-icon {
+flex-shrink: 0;
+font-size: 25px;
+line-height: 1.4;
+}
+
+.ai-notice-content {
+flex: 1;
+}
+
+.ai-notice-content strong {
+display: block;
+margin-bottom: 5px;
+font-size: 19px;
+color: #8a6200;
+}
+
+.ai-notice-content p {
+margin: 0;
+font-size: 15px;
+color: #4b4b4b;
+}
+
+.ai-notice-content a {
+color: #0066cc;
+font-weight: 600;
+text-decoration: none;
+}
+
+.ai-notice-content a:hover {
+text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+
+header {
+    padding: 22px 15px;
+}
+
+header h1 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+main {
+    padding: 18px 12px;
+}
+
+.ai-notice {
+    gap: 10px;
+    padding: 15px;
+    border-right-width: 4px;
+}
+
+.ai-notice-icon {
+    font-size: 22px;
+}
+
+.ai-notice-content strong {
+    font-size: 17px;
+}
+
+.ai-notice-content p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+}
+
+
+
+.country-info {
+width: 100%;
+margin-top: 30px;
+background: #ffffff;
+border-radius: 16px;
+padding: 25px;
+box-shadow: 0 3px 14px rgba(0, 0, 0, 0.05);
+border: 1px solid #dfe5e8;
+}
+
+.country-info h2 {
+margin: 0 0 22px;
+text-align: center;
+font-size: 26px;
+color: #27343a;
+position: relative;
+padding-bottom: 12px;
+}
+
+.country-info h2::after {
+content: "";
+display: block;
+width: 50px;
+height: 3px;
+margin: 10px auto 0;
+border-radius: 5px;
+background: #789b8a;
+}
+
+.info-table-wrapper {
+width: 100%;
+overflow-x: auto;
+border-radius: 10px;
+border: 1px solid #d5dde0;
+}
+
+.info-table {
+width: 100%;
+border-collapse: collapse;
+font-size: 16px;
+background: #ffffff;
+}
+
+.info-table tr {
+transition: background 0.2s ease;
+}
+
+.info-table th,
+.info-table td {
+padding: 15px 18px;
+border: 1px solid #d9e0e3;
+text-align: right;
+vertical-align: middle;
+}
+
+.info-table th {
+width: 30%;
+background: #f1f5f3;
+color: #345648;
+font-weight: 700;
+}
+
+.info-table td {
+background: #ffffff;
+color: #444;
+}
+
+.info-table tr:nth-child(even) td {
+background: #fafbfb;
+}
+
+.info-table tr:hover th {
+background: #eaf0ed;
+}
+
+.info-table tr:hover td {
+background: #f5f8f7;
+}
+
+@media (max-width: 600px) {
+
+
+.country-info {
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 13px;
+}
+
+.country-info h2 {
+    font-size: 21px;
+    margin-bottom: 17px;
+}
+
+.info-table {
+    font-size: 14px;
+}
+
+.info-table th,
+.info-table td {
+    padding: 13px 11px;
+}
+
+.info-table th {
+    width: 36%;
+    white-space: normal;
+}
+
+
+}
+
+
+
+
+
+
+
+
+.about-algeria {
+width: 100%;
+margin-top: 30px;
+background: #ffffff;
+border: 1px solid #dfe5e8;
+border-radius: 16px;
+padding: 25px;
+box-shadow: 0 3px 14px rgba(0, 0, 0, 0.05);
+}
+
+.about-algeria h2 {
+margin: 0 0 22px;
+text-align: center;
+font-size: 26px;
+color: #27343a;
+padding-bottom: 12px;
+border-bottom: 1px solid #e1e6e8;
+}
+
+.about-algeria p {
+margin: 0 0 18px;
+padding: 16px 18px;
+background: #f8faf9;
+border: 1px solid #e1e7e4;
+border-right: 3px solid #789b8a;
+border-radius: 8px;
+color: #444;
+font-size: 16px;
+line-height: 1.9;
+text-align: right;
+}
+
+.about-algeria p:last-child {
+margin-bottom: 0;
+}
+
+.about-algeria p:hover {
+background: #f4f7f5;
+}
+
+@media (max-width: 600px) {
+
+
+.about-algeria {
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 13px;
+}
+
+.about-algeria h2 {
+    font-size: 21px;
+    margin-bottom: 17px;
+}
+
+.about-algeria p {
+    padding: 13px 12px;
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 13px;
+} }
+
+
+
+
+
+.top-ad {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 15px 0 20px;
+}
+
+.top-ad-box {
+width: 330px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+background: #ffffff;
+}
+
+@media (max-width: 600px) {
+.top-ad {
+margin: 12px 0 18px;
+}
+
+
+.top-ad-box {
+    width: 330px;
+    max-width: 100%;
+    height: 50px;
+}
+
+
+}
+
+
+
+/* مستطيل الإعلان مستقل خارج الفوتر */
+.footer-ad {
+  width: 468px;
+  height: 60px;
+  max-width: calc(100% - 20px);
+  margin: 30px auto 20px; /* مسافة أفقية وتوسيط الإعلان */
+  background: #ffffff; /* لون أبيض ناصع */
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* خلفية الفوتر الملونة */
+.site-footer {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0;
+  background: #f4f5f7; /* لون خفيف */
+  text-align: center;
+}
+
+.footer-content {
+  padding: 15px;
+  background: transparent;
+  color: #555555;
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin: 4px 0;
+}
+
+/* التجاوب مع الهواتف */
+@media (max-width: 520px) {
+  .footer-ad {
+    width: calc(100% - 20px);
+    height: 60px;
+  }
+}
+
+
+
+
+
+
+
+.about-algeria h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    color: #27343a;
+}
+
+.about-algeria .about-title {
+    margin: 0 0 25px;
+    padding: 12px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #345648;
+    border-bottom: none;
+    position: relative;
+}
+
+.about-algeria .about-title::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    margin: 10px auto 0;
+    border-radius: 5px;
+    background: #789b8a;
+}
+.about-algeria h2 {
+    font-size: 19px;
+}
+
+.about-algeria .about-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+    padding: 8px 0;
+}
+
+
+
+
+
+.algeria-links {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.algeria-link {
+    width: 100%;
+    min-height: 60px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    background: #f8faf9;
+    border: 1px solid #dfe7e3;
+    border-right: 4px solid #789b8a;
+    border-radius: 9px;
+    color: #345648;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.algeria-link-title {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.algeria-link-arrow {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.algeria-link:hover {
+    background: #f1f5f3;
+    border-right-color: #527765;
+}
+
+@media (max-width: 600px) {
+    .algeria-links {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .algeria-link {
+        min-height: 55px;
+        padding: 14px 15px;
+    }
+
+    .algeria-link-title {
+        font-size: 15px;
+    }
+
+    .algeria-link-arrow {
+        font-size: 19px;
+    }
+}
+
+
+.home-arrow {
+display: inline-block;
+margin-right: 8px;
+padding: 4px 9px;
+background: #345648;
+color: #fff;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+font-size: 13px;
+white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+.home-arrow {
+padding: 4px 7px;
+font-size: 12px;
+margin-right: 5px;
+}
+}
